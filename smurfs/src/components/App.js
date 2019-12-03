@@ -26,8 +26,7 @@ function App(props) {
     setHeight('')
   }
 
-  //Experimented with different ways to dynamically create
-  //the proper setter function. No success yet.
+ 
   const handleNameChange = e => {
     e.preventDefault();
     setName(e.target.value)
@@ -45,9 +44,6 @@ function App(props) {
   return (
     <div className="App">
       <h1>SMURFS! 2.0 W/ Redux</h1>
-      <div>Welcome to your state management version of Smurfs!</div>
-      <div>Start inside of your `src/index.js` file!</div>
-      <div>Have fun!</div>
 
       <form onSubmit={handleSubmit}>
         <input placeholder='Name' name='Name' value={name} onChange={handleNameChange} />
